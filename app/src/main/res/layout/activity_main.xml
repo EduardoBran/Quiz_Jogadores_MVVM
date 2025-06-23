@@ -5,15 +5,89 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
     tools:context=".view.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <!-- 1) Toolbar fixa no topo -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/toolbar_title_main"
+        app:titleTextColor="@android:color/white" />
+
+
+    <!-- 2) ScrollView com conteúdo, logo abaixo da Toolbar e acima do banner -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:paddingBottom="48dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@id/frameBanner"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/content_padding_main">
+
+            <TextView
+                android:id="@+id/text_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_welcome_main"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_title_main"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_explanation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/content_margin_top_texts_main"
+                android:text="@string/text_explanation_main"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_subtitle_main" />
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_start_button_start_main"
+                android:layout_marginTop="@dimen/content_margin_top_btn_start_main"
+                android:layout_marginEnd="@dimen/margin_end_button_start_main"
+                android:backgroundTint="@color/white"
+                android:paddingTop="@dimen/padding_top_button_start_main"
+                android:paddingBottom="@dimen/padding_bottom_button_start_main"
+                android:text="@string/btn_start"
+                android:textColor="@color/toolbar_color"
+                android:textSize="@dimen/text_button_main"
+                android:textStyle="bold"
+                app:cornerRadius="16dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- FrameLayout fixo para AdMob -->
+    <FrameLayout
+        android:id="@+id/frameBanner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

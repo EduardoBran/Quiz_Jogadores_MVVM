@@ -1,2 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <!-- Activity Main -->
+
+    <!-- padding geral do bloco de conteúdo (LinearLayout interno) -->
+    <dimen name="content_padding_main">42dp</dimen>
+
+    <!-- margin top de conteúdo (LinearLayout interno) -->
+    <dimen name="content_margin_top_texts_main">12dp</dimen>
+    <dimen name="content_margin_top_btn_start_main">32dp</dimen>
+
+    <!-- padding buttom top e bottom -->
+    <dimen name="padding_top_button_start_main">18dp</dimen>
+    <dimen name="padding_bottom_button_start_main">18dp</dimen>
+
+    <!-- margin buttom start e left -->
+    <dimen name="margin_start_button_start_main">48dp</dimen>
+    <dimen name="margin_end_button_start_main">48dp</dimen>
+
+    <!-- textos -->
+    <dimen name="text_title_main">56sp</dimen>
+    <dimen name="text_subtitle_main">44sp</dimen>
+    <dimen name="text_button_main">44sp</dimen>
+</resources>
