@@ -9,4 +9,6 @@
 
     <!-- Cor da Toolbar -->
     <color name="toolbar_color">#6200EE</color>
+
+    <color name="light_gray">#BFBFBF</color>
 </resources>

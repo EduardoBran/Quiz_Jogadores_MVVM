@@ -10,16 +10,8 @@
 
     <!-- Activity Levels -->
     <string name="toolbar_title_levels">Levels</string>
+    <string name="icon_menu_back_levels">Voltar</string>
     <string name="btn_levels_1">1</string>
-    <string name="btn_levels_2">2</string>
-    <string name="btn_levels_3">3</string>
-    <string name="btn_levels_4">4</string>
-    <string name="btn_levels_5">5</string>
-    <string name="btn_levels_6">6</string>
-    <string name="btn_levels_7">7</string>
-    <string name="btn_levels_8">8</string>
-    <string name="btn_levels_9">9</string>
-    <string name="btn_levels_10">10</string>
 
 
     <!-- Activity Quiz -->
