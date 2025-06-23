@@ -1,0 +1,983 @@
+[
+  {
+    "id": 1,
+    "question": "Quem é este jogador?",
+    "clubs": ["Santos", "Barcelona", "PSG", "Al-Hilal", "Santos"],
+    "options": ["Oscar", "Rodrygo", "Neymar", "Hulk"],
+    "answer": "Neymar",
+    "level": "1",
+    "dica": "Fez parte do famoso trio MSN."
+  },
+  {
+    "id": 2,
+    "question": "Quem é este jogador?",
+    "clubs": ["Barcelona", "PSG", "Inter Miami"],
+    "options": ["Sergio Agüero", "Lionel Messi", "Ángel Di María", "Paulo Dybala"],
+    "answer": "Lionel Messi",
+    "level": "1",
+    "dica": "Maior artilheiro histórico do Barça."
+  },
+  {
+    "id": 3,
+    "question": "Quem é este jogador?",
+    "clubs": ["Monaco", "PSG", "Real Madrid"],
+    "options": ["Antoine Griezmann", "Kingsley Coman", "Ousmane Dembélé", "Kylian Mbappé"],
+    "answer": "Kylian Mbappé",
+    "level": "1",
+    "dica": "Campeão Mundial em 2018 pela França."
+  },
+  {
+    "id": 4,
+    "question": "Quem é este jogador?",
+    "clubs": ["Fluminense", "Fiorentina", "Flamengo"],
+    "options": ["Pedro", "Gilberto", "Yuri Alberto", "Tiquinho Soares"],
+    "answer": "Pedro",
+    "level": "1",
+    "dica": "Revelado no Fluminense aos 18 anos."
+  },
+  {
+    "id": 5,
+    "question": "Quem é este jogador?",
+    "clubs": ["Santos", "Inter de Milão", "Benfica", "Flamengo", "Cruzeiro"],
+    "options": ["Igor Jesus", "Gabigol", "Ferrerinha", "Rony"],
+    "answer": "Gabigol",
+    "level": "1",
+    "dica": "Marcou 2 gols na final da libertadores de 2019."
+  },
+  {
+    "id": 6,
+    "question": "Quem é este jogador?",
+    "clubs": ["Sporting", "Manchester United", "Real Madrid", "Juventus", "Al-Nassr"],
+    "options": ["João Félix", "Bernardo Silva", "Bruno Fernandes", "Cristiano Ronaldo"],
+    "answer": "Cristiano Ronaldo",
+    "level": "1",
+    "dica": "Maior artilheiro da Champions League."
+  },
+  {
+    "id": 7,
+    "question": "Quem é este jogador?",
+    "clubs": ["Flamengo", "Real Madrid"],
+    "options": ["Rodrygo", "Vinícius Júnior", "Endrick", "Gabriel Martinelli"],
+    "answer": "Vinícius Júnior",
+    "level": "1",
+    "dica": "Decisivo no título da Champions 2022."
+  },
+  {
+    "id": 8,
+    "question": "Quem é este jogador?",
+    "clubs": ["Palmeiras", "Manchester City", "Arsenal"],
+    "options": ["Raphinha", "Gabriel Jesus", "Roberto Firmino", "Dudu"],
+    "answer": "Gabriel Jesus",
+    "level": "1",
+    "dica": "Campeão olímpico em 2016 no Rio."
+  },
+  {
+    "id": 9,
+    "question": "Quem é este jogador?",
+    "clubs": ["Grêmio", "PSG", "Barcelona", "Milan", "Flamengo", "Atl. Mineiro", "Querétaro", "Fluminense"],
+    "options": ["Kaká", "Romário", "Ronaldinho Gaúcho", "Rivaldo"],
+    "answer": "Ronaldinho Gaúcho",
+    "level": "1",
+    "dica": "Melhor do Mundo em 2005 jogando pelo Barça."
+  },
+  {
+    "id": 10,
+    "question": "Quem é este jogador?",
+    "clubs": ["Santos", "New York Cosmos"],
+    "options": ["Pelé", "Romário", "Zico", "Garrincha"],
+    "answer": "Pelé",
+    "level": "1",
+    "dica": "Conhecido como Rei do Futebol."
+  },
+
+
+
+  {
+    "id": 11,
+    "question": "Quem é este jogador?",
+    "clubs": ["Cruzeiro", "PSV", "Barcelona", "Inter de Milão", "Real Madrid", "Milan", "Corinthians"],
+    "options": ["Romário", "Adriano", "Ronaldo", "Pelé"],
+    "answer": "Ronaldo",
+    "level": "2",
+    "dica": "Marcou 2 gols na final da Copa 2002."
+  },
+  {
+    "id": 12,
+    "question": "Quem é este jogador?",
+    "clubs": ["América Mineiro", "Fluminense", "Watford", "Everton", "Tottenham"],
+    "options": ["Rodrygo", "Vinicius Jr.", "Richarlison", "Raphinha"],
+    "answer": "Richarlison",
+    "level": "2",
+    "dica": "Autor de um golaço na abertura da Copa 2022."
+  },
+  {
+    "id": 13,
+    "question": "Quem é este jogador?",
+    "clubs": ["Santos", "Real Madrid"],
+    "options": ["Vinícius Júnior", "Neymar", "Savinho", "Rodrygo"],
+    "answer": "Rodrygo",
+    "level": "2",
+    "dica": "Marcou hat-trick na Champions 2022."
+  },
+  {
+    "id": 14,
+    "question": "Quem é este jogador?",
+    "clubs": ["Uberlândia", "Itumbiara", "Goiás", "Wolfsburg", "Santos", "Flamengo"],
+    "options": [ "Pedro", "Bruno Henrique", "João Pedro", "Rodrigo Muniz"],
+    "answer": "Bruno Henrique",
+    "level": "2",
+    "dica": "Eleito Rei da América em 2019."
+  },
+  {
+    "id": 15,
+    "question": "Quem é este jogador?",
+    "clubs": ["Nacional", "Groningen", "Ajax", "Liverpool", "Barcelona", "Atlético de Madrid", "Grêmio", "Inter Miami"],
+    "options": ["Luis Suárez", "Darwin Núñez", "Edinson Cavani", "Diego Forlán"],
+    "answer": "Luis Suárez",
+    "level": "2",
+    "dica": "Maior artilheiro da seleção do Uruguai."
+  },
+  {
+    "id": 16,
+    "question": "Quem é este jogador?",
+    "clubs": ["Bryne", "Molde", "Red Bull Salzburg", "Borussia Dortmund", "Manchester City"],
+    "options": ["Alexander Sørloth", "Erling Haaland", "Joshua King", "Martin Ødegaard"],
+    "answer": "Erling Haaland",
+    "level": "2",
+    "dica": "Artilheiro da Premier League com 36 gols em 22/23."
+  },
+  {
+    "id": 17,
+    "question": "Quem é este jogador?",
+    "clubs": ["Flamengo", "Milan", "Lyon", "West Ham"],
+    "options": ["Lucas Paquetá", "Philippe Coutinho", "Oscar", "Douglas Luiz"],
+    "answer": "Lucas Paquetá",
+    "level": "2",
+    "dica": "Transferido por €35M ao Lyon em 2019."
+  },
+  {
+    "id": 18,
+    "question": "Quem é este jogador?",
+    "clubs": ["Coritiba", "Corinthians", "São Caetano", "Cruzeiro", "Al-Ahli", "Flamengo", "Bahia"],
+    "options": ["De Arrascaeta", "Thiago Neves", "Willian Bigode", "Éverton Ribeiro"],
+    "answer": "Éverton Ribeiro",
+    "level": "2",
+    "dica": "Bicampeão da Libertadores pelo Flamengo."
+  },
+  {
+    "id": 19,
+    "question": "Quem é este jogador?",
+    "clubs": ["Inter de Milão", "Liverpool", "Barcelona", "Bayern de Munique", "Aston Villa", "Al-Duhail", "Vasco"],
+    "options": ["Philippe Coutinho", "Oscar", "Lucas Paquetá", "Giuliano"],
+    "answer": "Philippe Coutinho",
+    "level": "2",
+    "dica": "Campeão da Champions League com Bayern 2020."
+  },
+  {
+    "id": 20,
+    "question": "Quem é este jogador?",
+    "clubs": ["Vitória", "Tokyo Verdy", "K. Frontale", "Porto", "Zenit", "Shanghai", "Atlético Mineiro"],
+    "options": ["Deyverson", "Adriano", "Hulk", "Fred"],
+    "answer": "Hulk",
+    "level": "2",
+    "dica": "Tem o nome de um personagem famoso."
+  },
+
+
+
+
+  {
+    "id": 21,
+    "question": "Quem é este jogador?",
+    "clubs": ["Vitória", "Benfica", "Chelsea", "PSG", "Arsenal", "Flamengo", "Fortaleza"],
+    "options": ["David Luiz", "Murillo", "Dante", "Felipe"],
+    "answer": "David Luiz",
+    "level": "3",
+    "dica": "Famoso por sua vasta cabeleira."
+  },
+  {
+    "id": 22,
+    "question": "Quem é este jogador?",
+    "clubs": ["São Paulo", "Porto", "Real Madrid", "Manchester United"],
+    "options": ["Fred", "Casemiro", "Douglas Luiz", "Lucas Paquetá"],
+    "answer": "Casemiro",
+    "level": "3",
+    "dica": "Mais de 250 jogos pelo Real Madrid."
+  },
+  {
+    "id": 23,
+    "question": "Quem é este jogador?",
+    "clubs": ["Coritiba", "Atlético Paranaense", "Palmeiras"],
+    "options": ["Zé Rafael", "Gustavo Scarpa", "Bruno Tabata", "Raphael Veiga"],
+    "answer": "Raphael Veiga",
+    "level": "3",
+    "dica": "Fez o gol mais rápido da história do Allianz Parque."
+  },
+  {
+    "id": 24,
+    "question": "Quem é este jogador?",
+    "clubs": ["Palmeiras", "Real Madrid"],
+    "options": ["Rodrygo", "Endrick", "Estevão", "Vitor Roque"],
+    "answer": "Endrick",
+    "level": "3",
+    "dica": "Jogador mais jovem a marcar gol pelo Palmeiras."
+  },
+  {
+    "id": 25,
+    "question": "Quem é este jogador?",
+    "clubs": ["Fluminense", "Roma", "Fiorentina", "Olympique de Marseille", "Flamengo"],
+    "options": ["Gerson", "Thiago Maia", "Allan", "Willian Arão"],
+    "answer": "Gerson",
+    "level": "3",
+    "dica": "Transferido ao Marseille por €25M em 2021."
+  },
+  {
+    "id": 26,
+    "question": "Quem é este jogador?",
+    "clubs": ["Defensor", "Cruzeiro", "Flamengo"],
+    "options": ["Facundo Torres", "Federico Valverde", "Nicolás De La Cruz", "De Arrascaeta"],
+    "answer": "De Arrascaeta",
+    "level": "3",
+    "dica": "Único uruguaio campeão da Liberta pelo Fla."
+  },
+  {
+    "id": 27,
+    "question": "Quem é este jogador?",
+    "clubs": ["Flamengo", "Udinese", "Kashima Antlers"],
+    "options": ["Zico", "Sócrates", "Júnior", "Tostão"],
+    "answer": "Zico",
+    "level": "3",
+    "dica": "Maior artilheiro da história do Flamengo."
+  },
+  {
+    "id": 28,
+    "question": "Quem é este jogador?",
+    "clubs": ["Fluminense", "Real Madrid", "Olympiacos", "Fluminense"],
+    "options": ["Roberto Carlos", "Filipe Luís", "Maxwell", "Marcelo"],
+    "answer": "Marcelo",
+    "level": "3",
+    "dica": "Jogador com mais títulos pelo R. Madrid."
+  },
+  {
+    "id": 29,
+    "question": "Quem é este jogador?",
+    "clubs": ["Juventude", "Porto", "Dínamo de Moscou", "Milan", "PSG", "Chelsea", "Fluminense"],
+    "options": ["Léo Ortiz", "Thiago Silva", "Lúcio", "Marquinhos"],
+    "answer": "Thiago Silva",
+    "level": "3",
+    "dica": "Campeão da Champions pelo Chelsea em 2021."
+  },
+  {
+    "id": 30,
+    "question": "Quem é este jogador?",
+    "clubs": ["Al Mokawloon", "Basel", "Chelsea", "Fiorentina", "Roma", "Liverpool"],
+    "options": ["Mohamed Salah", "Sadio Mané", "Riyad Mahrez", "Hakim Ziyech"],
+    "answer": "Mohamed Salah",
+    "level": "3",
+    "dica": "4x Chuteira de Ouro da Premier League."
+  },
+
+
+
+
+  {
+    "id": 31,
+    "question": "Quem é este jogador?",
+    "clubs": ["Santos", "Internacional", "Zenit", "Corinthians"],
+    "options": ["Kaio Jorge", "Pedro Raul", "Gabigol", "Yuri Alberto"],
+    "answer": "Yuri Alberto",
+    "level": "4",
+    "dica": "Artilheiro do Brasileirão em 2024."
+  },
+
+  {
+    "id": 32,
+    "question": "Quem é este jogador?",
+    "clubs": ["Internacional", "Roma", "Liverpool"],
+    "options": ["Lucas Perri", "Alisson", "Bento", "Hugo Souza"],
+    "answer": "Alisson",
+    "level": "4",
+    "dica": "Eleito o Melhor Goleiro do Mundo em 2019."
+  },
+
+  {
+    "id": 33,
+    "question": "Quem é este jogador?",
+    "clubs": ["Corinthians", "Roma", "PSG"],
+    "options": ["Thiago Silva", "David Luiz", "Marquinhos", "Éder Militão"],
+    "answer": "Marquinhos",
+    "level": "4",
+    "dica": "Capitão do PSG desde 2021."
+  },
+
+  {
+    "id": 34,
+    "question": "Quem é este jogador?",
+    "clubs": ["União São João", "Palmeiras", "Inter de Milão", "Real Madrid", "Fenerbahçe", "Corinthians", "Anzhi"],
+    "options": ["Júnior", "Maxwell", "Roberto Carlos", "Marcelo"],
+    "answer": "Roberto Carlos",
+    "level": "4",
+    "dica": "Icônico gol de falta contra a França em 1997."
+  },
+
+  {
+    "id": 35,
+    "question": "Quem é este jogador?",
+    "clubs": ["Barcelona B", "Barcelona"],
+    "options": ["Lamine Yamal", "Bryan Gil", "Mikel Oyarzabal", "Nico Williams"],
+    "answer": "Lamine Yamal",
+    "level": "4",
+    "dica": "Mais jovem a estrear pelo Barça aos 15 anos."
+  },
+
+  {
+    "id": 36,
+    "question": "Quem é este jogador?",
+    "clubs": ["Genk", "Chelsea", "Werder Bremen", "Wolfsburg", "Manchester City"],
+    "options": ["Eden Hazard", "Dries Mertens", "Axel Witsel", "Kevin De Bruyne"],
+    "answer": "Kevin De Bruyne",
+    "level": "4",
+    "dica": "Recorde de 20 assistências em uma PL."
+  },
+
+  {
+    "id": 37,
+    "question": "Quem é este jogador?",
+    "clubs": ["Avaí", "Vitória de Guimarães", "Sporting", "Leeds United", "Barcelona"],
+    "options": ["Malcom", "Raphinha", "David Neres", "Rodrygo"],
+    "answer": "Raphinha",
+    "level": "4",
+    "dica": "Eleito Melhor Jogador de LaLiga 2024-25."
+  },
+
+  {
+    "id": 38,
+    "question": "Quem é este jogador?",
+    "clubs": ["Vasco", "Cruzeiro", "Fluminense"],
+    "options": ["Fábio", "Rafael Cabral", "Fernando Prass", "Rogério Ceni"],
+    "answer": "Fábio",
+    "level": "4",
+    "dica": "Possui 960 jogos oficiais pelo Cruzeiro."
+  },
+
+  {
+    "id": 39,
+    "question": "Quem é este jogador?",
+    "clubs": ["América-MG", "Athletico Paranaense", "Barcelona", "Real Betis", "Palmeiras"],
+    "options": ["Deyverson", "Vitor Roque", "Bruno Henrique", "Rony"],
+    "answer": "Vitor Roque",
+    "level": "4",
+    "dica": "Transferido ao Barça por €23M em 2024."
+  },
+
+  {
+    "id": 40,
+    "question": "Quem é este jogador?",
+    "clubs": ["São Paulo", "Milan", "Real Madrid", "Orlando City"],
+    "options": ["Kaká", "Ronaldinho Gaúcho", "Lucas Moura", "Rivaldo"],
+    "answer": "Kaká",
+    "level": "4",
+    "dica": "Eleito melhor do mundo em 2007."
+  },
+
+
+
+
+  {
+    "id": 41,
+    "question": "Quem é este jogador?",
+    "clubs": ["Coritiba 🇧🇷", "Botafogo-SP 🇧🇷", "Portuguesa 🇧🇷", "Atlético Paranaense 🇧🇷", "Palmeiras 🇧🇷"],
+    "options": ["Fernando Prass", "Weverton", "Marcelo Grohe", "Jailson"],
+    "answer": "Weverton",
+    "Ativo": true,
+    "nationality": "🇧🇷",
+    "level": "5",
+    "dica": "Bola de Prata de melhor goleiro em 2020."
+  },
+  {
+    "id": 42,
+    "question": "Quem é este jogador?",
+    "clubs": ["Coritiba 🇧🇷", "D. Kyiv 🇺🇦", "Grêmio 🇧🇷", "Palmeiras 🇧🇷", "Al-Duhail 🇶🇦", "Cruzeiro 🇧🇷", "Atl. Mineiro 🇧🇷"],
+    "options": ["Keno", "Rafael Sobis", "Willian", "Dudu"],
+    "answer": "Dudu",
+    "Ativo": true,
+    "nationality": "🇧🇷",
+    "level": "5",
+    "dica": "Líder de assistências no Brasileiro de 2018."
+  },
+  {
+    "id": 43,
+    "question": "Quem é este jogador?",
+    "clubs": ["São Paulo 🇧🇷", "Real Zaragoza 🇪🇸", "Juventude 🇧🇷", "Palmeiras 🇧🇷", "Roma 🇮🇹", "Milan 🇮🇹"],
+    "options": ["Belleti", "Maicon", "Cafu", "Jorginho"],
+    "answer": "Cafu",
+    "Ativo": false,
+    "nationality": "🇧🇷",
+    "level": "5",
+    "dica": "Jogou 3 finais de Copa do Mundo."
+  },
+  {
+    "id": 44,
+    "question": "Quem é este jogador?",
+    "clubs": ["Cannes 🇫🇷", "Bordeaux 🇫🇷", "Juventus 🇮🇹", "Real Madrid 🇪🇸"],
+    "options": ["Zinédine Zidane", "David Trezeguet", "Michel Platini", "Thierry Henry"],
+    "answer": "Zinédine Zidane",
+    "Ativo": false,
+    "nationality": "🇫🇷",
+    "level": "5",
+    "dica": "Marcou 2 gols na final da Copa 1998."
+  },
+  {
+    "id": 45,
+    "question": "Quem é este jogador?",
+    "clubs": ["Hamburgo 🇩🇪", "Bayer Leverkusen 🇩🇪", "Tottenham 🇬🇧"],
+    "options": ["Lee Kang-in", "Takefusa Kubo", "Hwang Hee-chan", "Son Heung-min"],
+    "answer": "Son Heung-min",
+    "Ativo": true,
+    "nationality": "🇰🇷",
+    "level": "5",
+    "dica": "6x melhor jogador asiático do ano."
+  },
+  {
+    "id": 46,
+    "question": "Quem é este jogador?",
+    "clubs": ["Lyon 🇫🇷", "Real Madrid 🇪🇸", "Al-Ittihad FC 🇸🇦"],
+    "options": ["Olivier Giroud", "Alexandre Lacazette", "Wissam Ben Yedder", "Karim Benzema"],
+    "answer": "Karim Benzema",
+    "Ativo": true,
+    "nationality": "🇫🇷",
+    "level": "5",
+    "dica": "Melhor jogador do mundo em 2022."
+  },
+  {
+    "id": 47,
+    "question": "Quem é este jogador?",
+    "clubs": ["Flamengo 🇧🇷", "Wolverhampton 🇬🇧"],
+    "options": ["João Gomes", "Matheus Nunes", "Douglas Luiz", "Gerson"],
+    "answer": "João Gomes",
+    "Ativo": true,
+    "nationality": "🇧🇷",
+    "level": "5",
+    "dica": "Em vídeo inspiracional, revelou ter gagueira."
+  },
+  {
+    "id": 48,
+    "question": "Quem é este jogador?",
+    "clubs": ["América-MG 🇧🇷", "Santos 🇧🇷", "Porto 🇵🇹", "Real Madrid 🇪🇸",  "Manchester City 🇬🇧", "Juventus 🇮🇹", "Flamengo 🇧🇷"],
+    "options": ["Wesley", "Danilo", "Abner", "Emerson Royal"],
+    "answer": "Danilo",
+    "Ativo": true,
+    "nationality": "🇧🇷",
+    "level": "5",
+    "dica": "Ganhou Premier League, Serie A e Champions."
+  },
+  {
+    "id": 49,
+    "question": "Quem é este jogador?",
+    "clubs": ["Tottenham 🇬🇧", "Bayern de Munique 🇩🇪"],
+    "options": ["Harry Kane", "Jamie Vardy", "Callum Wilson", "Ivan Toney"],
+    "answer": "Harry Kane",
+    "Ativo": true,
+    "nationality": "🇬🇧",
+    "level": "5",
+    "dica": "Ganhou seu primeiro título em 2025."
+  },
+  {
+    "id": 50,
+    "question": "Quem é este jogador?",
+    "clubs": ["Patriotas 🇨🇴", "América de Cali 🇨🇴", "Santa Fe 🇨🇴", "Fluminense 🇧🇷"],
+    "options": ["Luis Díaz", "Jhon Arias", "James Rodríguez", "Yimmi Chará"],
+    "answer": "Jhon Arias",
+    "Ativo": true,
+    "nationality": "🇨🇴",
+    "level": "5",
+    "dica": "Eleito para Seleção da Libertadores em 2023."
+  },
+
+
+
+  {
+    "id": 51,
+    "question": "Quem é este jogador?",
+    "clubs": ["Coritiba", "Botafogo-SP", "Portuguesa", "Atlético Paranaense", "Palmeiras"],
+    "options": ["Fernando Prass", "Weverton", "Marcelo Grohe", "Jailson"],
+    "answer": "Weverton",
+    "level": "6",
+    "dica": "Bola de Prata de melhor goleiro em 2020."
+  },
+  {
+    "id": 52,
+    "question": "Quem é este jogador?",
+    "clubs": ["Coritiba", "D. Kyiv", "Grêmio", "Palmeiras", "Al-Duhail", "Cruzeiro", "Atl. Mineiro"],
+    "options": ["Keno", "Rafael Sobis", "Willian", "Dudu"],
+    "answer": "Dudu",
+    "level": "6",
+    "dica": "Líder de assistências no Brasileiro de 2018."
+  },
+  {
+    "id": 53,
+    "question": "Quem é este jogador?",
+    "clubs": ["São Paulo", "Real Zaragoza", "Juventude", "Palmeiras", "Roma", "Milan"],
+    "options": ["Belleti", "Maicon", "Cafu", "Jorginho"],
+    "answer": "Cafu",
+    "level": "6",
+    "dica": "Jogou 3 finais de Copa do Mundo."
+  },
+  {
+    "id": 54,
+    "question": "Quem é este jogador?",
+    "clubs": ["Cannes", "Bordeaux", "Juventus", "Real Madrid"],
+    "options": ["Zinédine Zidane", "David Trezeguet", "Michel Platini", "Thierry Henry"],
+    "answer": "Zinédine Zidane",
+    "level": "6",
+    "dica": "Marcou 2 gols na final da Copa 1998."
+  },
+  {
+    "id": 55,
+    "question": "Quem é este jogador?",
+    "clubs": ["Hamburgo", "Bayer Leverkusen", "Tottenham"],
+    "options": ["Lee Kang-in", "Takefusa Kubo", "Hwang Hee-chan", "Son Heung-min"],
+    "answer": "Son Heung-min",
+    "level": "6",
+    "dica": "6x melhor jogador asiático do ano."
+  },
+  {
+    "id": 56,
+    "question": "Quem é este jogador?",
+    "clubs": ["Lyon", "Real Madrid", "Al-Ittihad FC"],
+    "options": ["Olivier Giroud", "Alexandre Lacazette", "Wissam Ben Yedder", "Karim Benzema"],
+    "answer": "Karim Benzema",
+    "level": "6",
+    "dica": "Melhor jogador do mundo em 2022."
+  },
+  {
+    "id": 57,
+    "question": "Quem é este jogador?",
+    "clubs": ["Flamengo", "Wolverhampton"],
+    "options": ["João Gomes", "Matheus Nunes", "Douglas Luiz", "Gerson"],
+    "answer": "João Gomes",
+    "level": "6",
+    "dica": "Em vídeo inspiracional, revelou ter gagueira."
+  },
+  {
+    "id": 58,
+    "question": "Quem é este jogador?",
+    "clubs": ["América-MG", "Santos", "Porto", "Real Madrid", "Manchester City", "Juventus", "Flamengo"],
+    "options": ["Wesley", "Danilo", "Abner", "Emerson Royal"],
+    "answer": "Danilo",
+    "level": "6",
+    "dica": "Ganhou Premier League, Serie A e Champions."
+  },
+  {
+    "id": 59,
+    "question": "Quem é este jogador?",
+    "clubs": ["Tottenham", "Bayern de Munique"],
+    "options": ["Harry Kane", "Jamie Vardy", "Callum Wilson", "Ivan Toney"],
+    "answer": "Harry Kane",
+    "level": "6",
+    "dica": "Ganhou seu primeiro título em 2025."
+  },
+  {
+    "id": 60,
+    "question": "Quem é este jogador?",
+    "clubs": ["Patriotas", "América de Cali", "Santa Fe", "Fluminense"],
+    "options": ["Luis Díaz", "Jhon Arias", "James Rodríguez", "Yimmi Chará"],
+    "answer": "Jhon Arias",
+    "level": "6",
+    "dica": "Eleito para Seleção da Libertadores em 2023."
+  },
+
+
+
+
+  {
+    "id": 61,
+    "question": "Quem é este jogador?",
+    "clubs": ["São Paulo", "Porto", "Real Madrid"],
+    "options": ["Marquinhos", "Éder Militão", "Gabriel Paulista", "Felipe"],
+    "answer": "Éder Militão",
+    "level": "7",
+    "dica": "Bicampeão da Champions League."
+  },
+  {
+    "id": 62,
+    "question": "Quem é este jogador?",
+    "clubs": ["São Paulo", "Rio Ave", "Benfica", "Manchester City"],
+    "options": ["Alisson", "Weverton", "Rafael Cabral", "Ederson"],
+    "answer": "Ederson",
+    "level": "7",
+    "dica": "3x Luva de Ouro da Premier League."
+  },
+  {
+    "id": 63,
+    "question": "Quem é este jogador?",
+    "clubs": ["Birmingham City", "Borussia Dortmund", "Real Madrid"],
+    "options": ["Declan Rice", "Phil Foden", "Mason Mount", "Jude Bellingham"],
+    "answer": "Jude Bellingham",
+    "level": "7",
+    "dica": "Jogador do Ano da La Liga 2023–24."
+  },
+  {
+    "id": 64,
+    "question": "Quem é este jogador?",
+    "clubs": ["Ituano", "Arsenal"],
+    "options": ["Rodrygo", "Vinicius Jr.", "Gabriel Martinelli", "Antony"],
+    "answer": "Gabriel Martinelli",
+    "level": "7",
+    "dica": "Revelação do Campeonato Paulista 2019."
+  },
+  {
+    "id": 65,
+    "question": "Quem é este jogador?",
+    "clubs": ["Fluminense", "Palmeiras", "Nottingham Forest", "Olympiacos", "Atlético Mineiro"],
+    "options": ["Gustavo Scarpa", "Raphael Veiga", "Zé Rafael", "Gerson"],
+    "answer": "Gustavo Scarpa",
+    "level": "7",
+    "dica": "Além do futebol, curte skate e cubo mágico."
+  },
+  {
+    "id": 66,
+    "question": "Quem é este jogador?",
+    "clubs": ["Schalke 04", "Bayern de Munique"],
+    "options": ["Marc-André ter Stegen", "Bernd Leno", "Manuel Neuer", "Kevin Trapp"],
+    "answer": "Manuel Neuer",
+    "level": "7",
+    "dica": "Capitão do Bayern e vencedor da Champions."
+  },
+  {
+    "id": 67,
+    "question": "Quem é este jogador?",
+    "clubs": ["Flamengo", "Inter de Milão", "Fiorentina", "Parma", "São Paulo", "Roma", "Corinthians", "Atl. Paranaense"],
+    "options": ["Jô", "Adriano", "Vágner Love", "Ronaldo"],
+    "answer": "Adriano",
+    "level": "7",
+    "dica": "Possui o apelido de Imperador."
+  },
+  {
+    "id": 68,
+    "question": "Quem é este jogador?",
+    "clubs": ["PSV", "Manchester United", "Lyon", "Barcelona", "Atlético de Madrid", "Corinthians"],
+    "options": ["Luuk de Jong", "Steven Bergwijn", "Cody Gakpo", "Memphis Depay"],
+    "answer": "Memphis Depay",
+    "level": "7",
+    "dica": "Campeão Paulista em 2025."
+  },
+  {
+    "id": 69,
+    "question": "Quem é este jogador?",
+    "clubs": ["Athletico Paranaense", "Lyon", "Newcastle"],
+    "options": ["Douglas Luiz", "Bruno Guimarães", "Casemiro", "Éverton Ribeiro"],
+    "answer": "Bruno Guimarães",
+    "level": "7",
+    "dica": "Veste o número 39 em homenagem ao pai."
+  },
+  {
+    "id": 70,
+    "question": "Quem é este jogador?",
+    "clubs": ["Vasco", "Bayer Leverkusen", "Atlético Mineiro", "Palmeiras"],
+    "options": ["Paulinho", "Giovani", "Endrick", "Artur"],
+    "answer": "Paulinho",
+    "level": "7",
+    "dica": "Artilheiro do Atl. Mineiro em 2023."
+  }
+,
+
+
+
+  {
+    "id": 71,
+    "question": "Quem é este jogador?",
+    "clubs": ["Manchester United 🇬🇧", "Aston Villa 🇬🇧"],
+    "options": ["Jadon Sancho", "Marcus Rashford", "Anthony Martial", "Mason Greenwood"],
+    "answer": "Marcus Rashford",
+    "Ativo": true,
+    "nationality": "🇬🇧",
+    "level": "8",
+    "dica": "Campeão da Europa League 2016–17."
+  },
+  {
+    "id": 72,
+    "question": "Quem é este jogador?",
+    "clubs": ["Argentinos Juniors 🇦🇷", "Boca Juniors 🇦🇷", "Barcelona 🇪🇸", "Napoli 🇮🇹", "Sevilla 🇪🇸", "Newell's Old Boys 🇦🇷"],
+    "options": ["Gabriel Batistuta", "Juan Román Riquelme", "Diego Maradona", "Ariel Ortega"],
+    "answer": "Diego Maradona",
+    "Ativo": false,
+    "nationality": "🇦🇷",
+    "level": "8",
+    "dica": "Ganhou Mundial 1986 com gol 'Mão de Deus'."
+  },
+  {
+    "id": 73,
+    "question": "Quem é este jogador?",
+    "clubs": ["Corinthians 🇧🇷", "Athletico Paranaense 🇧🇷", "Sevilla 🇪🇸", "Atalanta 🇮🇹", "Atlético Mineiro 🇧🇷"],
+    "options": ["Guilherme Arana", "Alex Sandro", "Caio Henrique", "Renan Lodi"],
+    "answer": "Guilherme Arana",
+    "Ativo": true,
+    "nationality": "🇧🇷",
+    "level": "8",
+    "dica": "Bicampeão brasileiro em 2015 e 2017."
+  },
+  {
+    "id": 74,
+    "question": "Quem é este jogador?",
+    "clubs": ["Remo 🇧🇷", "Cruzeiro 🇧🇷", "Athletico Paranaense 🇧🇷", "Palmeiras 🇧🇷", "Atlético Mineiro 🇧🇷"],
+    "options": ["Rony", "Dudu", "Artur", "Endrick"],
+    "answer": "Rony",
+    "Ativo": true,
+    "nationality": "🇧🇷",
+    "level": "8",
+    "dica": "Artilheiro do Palmeiras na Libertadores 2021."
+  },
+  {
+    "id": 75,
+    "question": "Quem é este jogador?",
+    "clubs": ["Barcelona 🇪🇸", "Inter Miami 🇺🇸"],
+    "options": ["Andrés Iniesta", "Rodri", "Xavi", "Sergio Busquets"],
+    "answer": "Sergio Busquets",
+    "Ativo": true,
+    "nationality": "🇪🇸",
+    "level": "8",
+    "dica": "Jogador revelação da La Liga de 2008–09."
+  },
+  {
+    "id": 76,
+    "question": "Quem é este jogador?",
+    "clubs": ["Real Madrid 🇪🇸", "PSG 🇫🇷", "Sevilla 🇪🇸", "Monterrey 🇲🇽"],
+    "options": ["Gerard Piqué", "Sergio Ramos", "Nacho", "Raúl Albiol"],
+    "answer": "Sergio Ramos",
+    "Ativo": true,
+    "nationality": "🇪🇸",
+    "level": "8",
+    "dica": "Jogador com mais partidas pela Seleção Espanhola."
+  },
+  {
+    "id": 77,
+    "question": "Quem é este jogador?",
+    "clubs": ["Dinamo Zagreb 🇭🇷", "Tottenham 🇬🇧", "Real Madrid 🇪🇸"],
+    "options": ["Ivan Rakitić", "Marcelo Brozović", "Mateo Kovačić", "Luka Modrić"],
+    "answer": "Luka Modrić",
+    "Ativo": true,
+    "nationality": "🇭🇷",
+    "level": "8",
+    "dica": "Melhor jogador do mundo em 2018."
+  },
+  {
+    "id": 78,
+    "question": "Quem é este jogador?",
+    "clubs": ["Real Sociedad 🇪🇸", "Barcelona 🇪🇸", "Atlético de Madrid 🇪🇸"],
+    "options": ["Antoine Griezmann", "Álvaro Morata", "David Villa", "Fernando Torres"],
+    "answer": "Antoine Griezmann",
+    "Ativo": true,
+    "nationality": "🇫🇷",
+    "level": "8",
+    "dica": "Conhecido como 'La Grizou' pelos fãs."
+  },
+  {
+    "id": 79,
+    "question": "Quem é este jogador?",
+    "clubs": ["Avaí 🇧🇷", "Lille 🇫🇷", "Dinamo Zagreb 🇭🇷", "Arsenal 🇬🇧"],
+    "options": ["Éder Militão", "Bremer", "Gabriel Magalhães", "Lucas Veríssimo"],
+    "answer": "Gabriel Magalhães",
+    "Ativo": true,
+    "nationality": "🇧🇷",
+    "level": "8",
+    "dica": "Contratado pelo Arsenal por €30M em 2021."
+  },
+  {
+    "id": 80,
+    "question": "Quem é este jogador?",
+    "clubs": ["Lille 🇫🇷", "Chelsea 🇬🇧", "Real Madrid 🇪🇸"],
+    "options": ["Eden Hazard", "Kevin De Bruyne", "Dries Mertens", "Thorgan Hazard"],
+    "answer": "Eden Hazard",
+    "Ativo": false,
+    "nationality": "🇧🇪",
+    "level": "8",
+    "dica": "Pendurou as chuteiros ao 32 anos."
+  },
+
+
+
+  {
+    "id": 81,
+    "question": "Quem é este jogador?",
+    "clubs": ["Manchester United", "Aston Villa"],
+    "options": ["Jadon Sancho", "Marcus Rashford", "Anthony Martial", "Mason Greenwood"],
+    "answer": "Marcus Rashford",
+    "level": "8",
+    "dica": "Campeão da Europa League 2016–17."
+  },
+  {
+    "id": 82,
+    "question": "Quem é este jogador?",
+    "clubs": ["Argentinos Juniors", "Boca Juniors", "Barcelona", "Napoli", "Sevilla", "Newell's Old Boys"],
+    "options": ["Gabriel Batistuta", "Juan Román Riquelme", "Diego Maradona", "Ariel Ortega"],
+    "answer": "Diego Maradona",
+    "level": "8",
+    "dica": "Ganhou Mundial 1986 com gol 'Mão de Deus'."
+  },
+  {
+    "id": 83,
+    "question": "Quem é este jogador?",
+    "clubs": ["Corinthians", "Athletico Paranaense", "Sevilla", "Atalanta", "Atlético Mineiro"],
+    "options": ["Guilherme Arana", "Alex Sandro", "Caio Henrique", "Renan Lodi"],
+    "answer": "Guilherme Arana",
+    "level": "8",
+    "dica": "Bicampeão brasileiro em 2015 e 2017."
+  },
+  {
+    "id": 84,
+    "question": "Quem é este jogador?",
+    "clubs": ["Remo", "Cruzeiro", "Athletico Paranaense", "Palmeiras", "Atlético Mineiro"],
+    "options": ["Rony", "Dudu", "Artur", "Endrick"],
+    "answer": "Rony",
+    "level": "8",
+    "dica": "Artilheiro do Palmeiras na Libertadores 2021."
+  },
+  {
+    "id": 85,
+    "question": "Quem é este jogador?",
+    "clubs": ["Barcelona", "Inter Miami"],
+    "options": ["Andrés Iniesta", "Rodri", "Xavi", "Sergio Busquets"],
+    "answer": "Sergio Busquets",
+    "level": "8",
+    "dica": "Jogador revelação da La Liga de 2008–09."
+  },
+  {
+    "id": 86,
+    "question": "Quem é este jogador?",
+    "clubs": ["Real Madrid", "PSG", "Sevilla", "Monterrey"],
+    "options": ["Gerard Piqué", "Sergio Ramos", "Nacho", "Raúl Albiol"],
+    "answer": "Sergio Ramos",
+    "level": "8",
+    "dica": "Jogador com mais partidas pela Seleção Espanhola."
+  },
+  {
+    "id": 87,
+    "question": "Quem é este jogador?",
+    "clubs": ["Dinamo Zagreb", "Tottenham", "Real Madrid"],
+    "options": ["Ivan Rakitić", "Marcelo Brozović", "Mateo Kovačić", "Luka Modrić"],
+    "answer": "Luka Modrić",
+    "level": "8",
+    "dica": "Melhor jogador do mundo em 2018."
+  },
+  {
+    "id": 88,
+    "question": "Quem é este jogador?",
+    "clubs": ["Real Sociedad", "Barcelona", "Atlético de Madrid"],
+    "options": ["Antoine Griezmann", "Álvaro Morata", "David Villa", "Fernando Torres"],
+    "answer": "Antoine Griezmann",
+    "level": "8",
+    "dica": "Conhecido como 'La Grizou' pelos fãs."
+  },
+  {
+    "id": 89,
+    "question": "Quem é este jogador?",
+    "clubs": ["Avaí", "Lille", "Dinamo Zagreb", "Arsenal"],
+    "options": ["Éder Militão", "Bremer", "Gabriel Magalhães", "Lucas Veríssimo"],
+    "answer": "Gabriel Magalhães",
+    "level": "8",
+    "dica": "Contratado pelo Arsenal por €30M em 2021."
+  },
+  {
+    "id": 90,
+    "question": "Quem é este jogador?",
+    "clubs": ["Lille", "Chelsea", "Real Madrid"],
+    "options": ["Eden Hazard", "Kevin De Bruyne", "Dries Mertens", "Thorgan Hazard"],
+    "answer": "Eden Hazard",
+    "level": "8",
+    "dica": "Pendurou as chuteiros ao 32 anos."
+  },
+
+
+
+  {
+    "id": 91,
+    "question": "Quem é este jogador?",
+    "clubs": ["Tours", "Montpellier", "Arsenal", "Chelsea", "Milan", "Los Angeles FC"],
+    "options": ["Olivier Giroud", "Karim Benzema", "Antoine Griezmann", "Alexandre Lacazette"],
+    "answer": "Olivier Giroud",
+    "level": "10",
+    "dica": "Campeão do Mundo 2018 sem fazer gol."
+  },
+  {
+    "id": 92,
+    "question": "Quem é este jogador?",
+    "clubs": ["São Paulo", "PSG", "Tottenham", "São Paulo"],
+    "options": ["Antony", "Lucas Moura", "David Neres", "Willian"],
+    "answer": "Lucas Moura",
+    "level": "10",
+    "dica": "Hat-trick histórico na semifinal da Champions."
+  },
+  {
+    "id": 93,
+    "question": "Quem é este jogador?",
+    "clubs": ["Milan", "PSG"],
+    "options": ["Salvatore Sirigu", "Gianluigi Buffon", "Gianluigi Donnarumma", "Alex Meret"],
+    "answer": "Gianluigi Donnarumma",
+    "level": "10",
+    "dica": "Campeão da Euro 2020 aos 22 anos."
+  },
+  {
+    "id": 94,
+    "question": "Quem é este jogador?",
+    "clubs": ["Barcelona B", "Barcelona", "Al-Sadd"],
+    "options": ["Cesc Fàbregas", "Xavi", "Sergio Busquets", "Xabi Alonso"],
+    "answer": "Xavi",
+    "level": "10",
+    "dica": "Melhor Jogador da Euro 2008."
+  },
+  {
+    "id": 95,
+    "question": "Quem é este jogador?",
+    "clubs": ["Danubio", "Palermo", "Napoli", "PSG", "Manchester United", "Valencia", "Boca Juniors"],
+    "options": ["Edinson Cavani", "Luis Suárez", "Darwin Núñez", "Maxi Gómez"],
+    "answer": "Edinson Cavani",
+    "level": "10",
+    "dica": "Celebra gols sacando e atirando uma flecha."
+  },
+  {
+    "id": 96,
+    "question": "Quem é este jogador?",
+    "clubs": ["Anderlecht", "Chelsea", "West Bromwich", "Everton", "Manchester United", "Inter de Milão", "Roma", "Napoli"],
+    "options": ["Christian Benteke", "Divock Origi", "Romelu Lukaku", "Michy Batshuayi"],
+    "answer": "Romelu Lukaku",
+    "level": "10",
+    "dica": "Maior artilheiro da Seleção Belga."
+  },
+  {
+    "id": 97,
+    "question": "Quem é este jogador?",
+    "clubs": ["Vasco", "Shakhtar Donetsk", "Beşiktaş", "Al-Ittihad", "Vasco"],
+    "options": ["Anderson Talisca", "Alan Kardec", "Diego Souza", "Alex Teixeira"],
+    "answer": "Alex Teixeira",
+    "level": "10",
+    "dica": "5x campeão ucraniano."
+  },
+  {
+    "id": 98,
+    "question": "Quem é este jogador?",
+    "clubs": ["Flamengo", "Bayer Leverkusen", "Corinthians", "Beijing Guoan", "Fluminense"],
+    "options": ["Juliano", "Éverton Ribeiro", "Renato Augusto", "Paulinho"],
+    "answer": "Renato Augusto",
+    "level": "10",
+    "dica": "Campeão brasileiro em 2015."
+  },
+  {
+    "id": 99,
+    "question": "Quem é este jogador?",
+    "clubs": ["Athletico Paranaense", "Al-Nassr"],
+    "options": ["Ederson", "Bento", "João Paulo", "Weverton"],
+    "answer": "Bento",
+    "level": "10",
+    "dica": "Campeão Olímpico em 2020."
+  },
+  {
+    "id": 100,
+    "question": "Quem é este jogador?",
+    "clubs": ["Coritiba", "Schalke 04", "Bayern de Munique", "Flamengo", "Olympiacos", "Grêmio", "São Paulo"],
+    "options": ["Rafinha", "Maicon", "Belletti", "Cafu"],
+    "answer": "Rafinha",
+    "level": "10",
+    "dica": "Ganhou 7x a Bundesliga."
+  }
+]
