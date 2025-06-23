@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Tons do gradiente de fundo -->
+    <color name="gradient_start">#6A00FF</color>
+    <color name="gradient_end">#C300FF</color>
+
+    <!-- Cor da Toolbar -->
+    <color name="toolbar_color">#6200EE</color>
 </resources>
