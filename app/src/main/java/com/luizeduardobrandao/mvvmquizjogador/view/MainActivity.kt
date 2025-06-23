@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.luizeduardobrandao.mvvmquizjogador.R
 import com.luizeduardobrandao.mvvmquizjogador.databinding.ActivityMainBinding
+import com.luizeduardobrandao.mvvmquizjogador.repository.BannerAds
 import com.luizeduardobrandao.mvvmquizjogador.viewmodel.MainViewModel
 
 class MainActivity : AppCompatActivity() {
@@ -32,8 +33,14 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        // inicializa SDK
+        BannerAds.initialize(this)
+
         setListeners()
         setObservers()
+
+        // carrega o banner no container da view binding
+        BannerAds.loadBanner(this, binding.frameBanner)
     }
 
     // Disparar evento no ViewModel
