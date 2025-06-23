@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">MVVM Quiz Jogador</string>
+
+    <!-- Activity Main -->
+    <string name="toolbar_title_main">Quiz Jogadores</string>
+    <string name="text_welcome_main">Bem vindo!</string>
+    <string name="text_explanation_main">Teste seus conhecimentos sobre jogadores de futebol!</string>
+    <string name="btn_start">Iniciar Quiz</string>
+
+
+
+    <!-- Activity Levels -->
+    <string name="toolbar_title_levels">Levels</string>
+    <string name="btn_levels_1">1</string>
+    <string name="btn_levels_2">2</string>
+    <string name="btn_levels_3">3</string>
+    <string name="btn_levels_4">4</string>
+    <string name="btn_levels_5">5</string>
+    <string name="btn_levels_6">6</string>
+    <string name="btn_levels_7">7</string>
+    <string name="btn_levels_8">8</string>
+    <string name="btn_levels_9">9</string>
+    <string name="btn_levels_10">10</string>
+
+
+    <!-- Activity Quiz -->
+    <string name="text_quiz_card">Joguei por </string>
+
+
+    <!-- Activity Result -->
+    <string name="toolbar_title_result">Resultado</string>
+    <string name="text_congratulations_result">Parabéns</string>
+    <string name="btn_levels">Levels</string>
+    <string name="btn_share">Compartilhar</string>
+
+
+
 </resources>
