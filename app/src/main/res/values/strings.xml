@@ -16,6 +16,15 @@
 
     <!-- Activity Quiz -->
     <string name="text_quiz_card">Joguei por </string>
+    <string name="text_dica">Veja um vídeo para ganhar uma dica!</string>
+
+    <string name="cont_btn_pause">Pausar</string>
+    <string name="cont_btn_option1">Opção 1</string>
+    <string name="cont_btn_option2">Opção 2</string>
+    <string name="cont_btn_option3">Opção 3</string>
+    <string name="cont_btn_option4">Opção 4</string>
+
+
 
 
     <!-- Activity Result -->

@@ -35,4 +35,18 @@
     <!-- texto número -->
     <dimen name="text_size_numbers">16sp</dimen>
 
+
+    <!-- Activity Quiz -->
+
+    <!-- View Toolbar -->
+    <dimen name="height_view_toolbar_quiz">64dp</dimen>
+    <dimen name="width_icon_timer">24dp</dimen>
+    <dimen name="height_icon_timer">24dp</dimen>
+    <dimen name="text_toolbar_quiz">22sp</dimen>
+    <dimen name="padding_button_pause">8dp</dimen>
+
+    <!-- Card Question -->
+    <dimen name="padding_card_question">16dp</dimen>
+    <dimen name="text_card_question">18sp</dimen>
+
 </resources>

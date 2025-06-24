@@ -10,5 +10,15 @@
     <!-- Cor da Toolbar -->
     <color name="toolbar_color">#6200EE</color>
 
+    <!-- Cor do botão desativado -->
     <color name="light_gray">#BFBFBF</color>
+
+    <!-- Cores da activity_quiz -->
+    <color name="background_light_quiz">#F2F2F2</color>
+    <color name="menu_background">#E0E0E0</color>
+    <color name="text_index">#5E35B1</color>
+    <color name="button_pause">#4A148C</color>
+    <color name="card_question">#8E24AA</color>
+    <color name="button_option">#662BF0</color>
+    <color name="button_dica">#009688</color>
 </resources>

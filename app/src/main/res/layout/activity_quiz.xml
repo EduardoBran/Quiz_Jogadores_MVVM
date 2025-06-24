@@ -5,6 +5,112 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_light_quiz"
     tools:context=".view.QuizActivity">
+
+    <!-- Container com margin, para t0do conteúdo exceto o banner -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toTopOf="@id/frameBanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Menu (View de fundo) -->
+        <View
+            android:id="@+id/menuView"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_view_toolbar_quiz"
+            android:background="@color/menu_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Índice da pergunta -->
+        <TextView
+            android:id="@+id/textviewIndex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="4/10"
+            android:textColor="@color/text_index"
+            android:textSize="@dimen/text_toolbar_quiz"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/menuView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/menuView" />
+
+        <!-- Cronômetro centralizado -->
+        <TextView
+            android:id="@+id/textviewTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_timer"
+            android:drawablePadding="4dp"
+            android:text="38s"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_toolbar_quiz"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/menuView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/menuView" />
+
+        <!-- Botão de pausa -->
+        <ImageButton
+            android:id="@+id/btnPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_pause_button"
+            android:contentDescription="@string/cont_btn_pause"
+            android:padding="@dimen/padding_button_pause"
+            android:src="@drawable/ic_pause"
+            app:layout_constraintBottom_toBottomOf="@id/menuView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/menuView"
+            app:tint="@color/white" />
+
+
+        <!-- Cartão da pergunta: só altura de conteúdo -->
+        <FrameLayout
+            android:id="@+id/questionCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_pause_button"
+            android:padding="@dimen/padding_card_question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/menuView">
+
+            <TextView
+                android:id="@+id/tvQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Joguei por: Inter de Milão, Liverpool, Barcelona, Bayern de Munique, Aston Villa, Al-Duhail, Vasco"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_card_question"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- FrameLayout fixo para AdMob -->
+    <FrameLayout
+        android:id="@+id/frameBanner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
