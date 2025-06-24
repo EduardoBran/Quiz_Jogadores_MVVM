@@ -3,6 +3,7 @@
     <!-- Toolbar -->
     <dimen name="toolbar_title_text_size">28sp</dimen>
 
+
     <!-- Activity Main -->
 
     <!-- padding geral do bloco de conteúdo (LinearLayout interno) -->
@@ -24,4 +25,13 @@
     <dimen name="text_title_main">56sp</dimen>
     <dimen name="text_subtitle_main">44sp</dimen>
     <dimen name="text_button_main">44sp</dimen>
+
+
+    <!-- Activity Levels -->
+
+    <!-- tamanho dos botões -->
+    <dimen name="height_buttoms">64dp</dimen>
+
+    <!-- texto número -->
+    <dimen name="text_size_numbers">24sp</dimen>
 </resources>

@@ -9,9 +9,10 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_level"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="@dimen/height_buttoms"
         android:enabled="false"
         android:text="@string/btn_levels_1"
+        android:textSize="@dimen/text_size_numbers"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:backgroundTint="@color/level_button_color"
