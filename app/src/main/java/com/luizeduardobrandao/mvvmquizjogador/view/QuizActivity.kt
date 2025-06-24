@@ -1,6 +1,9 @@
 package com.luizeduardobrandao.mvvmquizjogador.view
 
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +22,9 @@ class QuizActivity : AppCompatActivity() {
     private val viewModel: QuizViewModel by viewModels()
     private lateinit var adapter: QuizAdapter
 
+    // Guarda a opção clicada para usar no feedback de cor
+    private var lastClickedOption: String? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -32,9 +38,16 @@ class QuizActivity : AppCompatActivity() {
             insets
         }
 
+
         // Configura RecyclerView e observers
         setupRecycler()
         observeViewModel()
+
+        // Apenas na primeira criação da Activity (não depois de rotações):
+        if (savedInstanceState == null) {
+            val level = intent.getIntExtra("EXTRA_LEVEL", 1)
+            viewModel.loadQuestions(level)
+        }
 
         // carrega o banner no container da view binding
         BannerAds.loadBanner(this, binding.frameBanner)
@@ -42,23 +55,58 @@ class QuizActivity : AppCompatActivity() {
 
     // Configura RecyclerView com LinearLayout e Adapter
     private fun setupRecycler(){
+        // 1) configurar RecyclerView e Adapter
+        adapter = QuizAdapter(onOptionClickListener = { button, option ->
+            // dispara a checagem
+            lastClickedOption = option
+            viewModel.submitAnswer(option)
+        })
         binding.recyclerOptions.layoutManager = LinearLayoutManager(this)
-        adapter = QuizAdapter { option ->
-            // TODO: tratar clique na opção
-        }
         binding.recyclerOptions.adapter = adapter
     }
 
-    // Observa e exibe a pergunta e opções
+    // Observa e exibe a pergunta e índice
     private fun observeViewModel(){
-        viewModel.currentQuestion.observe(this) { question ->
-            // 1) Une os nomes dos clubes em uma única string separados por vírgula
-            val clubesText = question.clubs.joinToString(separator = ", ")
-            // 2) Atribui ao TextView no formato desejado
-            binding.textviewQuestion.text = "Joguei por: $clubesText"
-            // 3) Continua populando as opções normalmente
-            adapter.setOptions(question.options)
+        // 2) Observe de pergunta
+        viewModel.currentQuestion.observe(this) { q ->
+            val clubes = q.clubs.joinToString(", ")
+            binding.textviewQuestion.text = "Joguei por: $clubes"
+            adapter.setOptions(q.options)
         }
-        viewModel.loadQuestions(level = 1)
+
+        // 3) Observa índice
+        viewModel.questionIndex.observe(this) { index ->
+            binding.textviewIndex.text = "$index/10"
+        }
+
+        // 4) Observer do resultado da resposta (somente TRUE ou FALSE)
+        viewModel.answerResult.observe(this) { result ->
+            if (result != null) {
+                // marca a opção clicada como CERTA ou ERRADA (pinta de verde ou vermelho)
+                lastClickedOption?.let { opt ->
+                    adapter.markOption(opt, result)
+                }
+                // espera 2s e então avançar/reiniciar via ViewModel
+                Handler(Looper.getMainLooper()).postDelayed({
+                    adapter.clearMarks()
+                    viewModel.moveToNext()
+                }, 2000)
+            }
+        }
+
+        // 5) Observer de navegação ao resultado (resultado == NULL)
+        viewModel.navigateToResult.observe(this) { go ->
+            if (go) {
+                // pinta de verde o ultimo botão (acerto da última pergunta)
+                lastClickedOption?.let { adapter.markOption(it, true) }
+
+                // espera 2s e então navega
+                Handler(Looper.getMainLooper()).postDelayed({
+                    startActivity(Intent(this, ResultActivity::class.java))
+                    finish()
+                    viewModel.doneNavigation()
+                }, 2000)
+            }
+        }
     }
 }

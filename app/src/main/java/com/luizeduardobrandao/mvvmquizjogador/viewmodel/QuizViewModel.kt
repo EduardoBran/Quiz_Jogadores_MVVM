@@ -5,27 +5,72 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.luizeduardobrandao.mvvmquizjogador.entitie.Question
+import com.luizeduardobrandao.mvvmquizjogador.model.QuizModel
 import com.luizeduardobrandao.mvvmquizjogador.repository.QuizRepository
 
-class QuizViewModel(application: Application): AndroidViewModel(application) {
+class QuizViewModel(app: Application): AndroidViewModel(app) {
 
-    private val repo = QuizRepository(application)
+    private val model = QuizModel(QuizRepository(app))
 
-    // lista completa de questões
-    private val _questions = MutableLiveData<List<Question>>()
-    val questions: LiveData<List<Question>> = _questions
-
-    // questão atual
     private val _currentQuestion = MutableLiveData<Question>()
     val currentQuestion: LiveData<Question> = _currentQuestion
 
+    private val _questionIndex = MutableLiveData<Int>()
+    val questionIndex: LiveData<Int> = _questionIndex
 
-    // Carrega todas as perguntas do nível e define a primeira
+    // resultado da última checagem: true, false ou null
+    private val _answerResult = MutableLiveData<Boolean?>()
+    val answerResult: LiveData<Boolean?> = _answerResult
+
+    // dispara quando result==null (última pergunta) e deve navegar
+    private val _navigateToResult = MutableLiveData<Boolean>()
+    val navigateToResult: LiveData<Boolean> = _navigateToResult
+
+
+    /** Inicia quiz no nível */
     fun loadQuestions(level: Int) {
-        val list = repo.loadQuestionByLevel(level)
-        _questions.value = list
-        if (list.isNotEmpty()) {
-            _currentQuestion.value = list [0]
+        model.load(level)
+        _currentQuestion.value = model.current()
+        _questionIndex.value = model.currentIndex()
+    }
+
+    /** Avalia a resposta, mas NÃO avança índice ainda */
+    fun submitAnswer(option: String){
+        val result = model.checkAnswer(option)
+        _answerResult.value = result
+
+        // se resposta era da última pergunta → dispara evento de navegação
+        if (result == null) {
+            _navigateToResult.value = true
         }
+    }
+
+    /**
+     * Depois do delay na Activity, chama este mét0do para:
+     * – avançar ou reiniciar o índice no Model
+     * – atualizar LiveData de pergunta e índice ou disparar navegação
+     */
+    fun moveToNext() {
+        val result = _answerResult.value
+        model.moveNext(result)
+
+        when (result) {
+            true -> {
+                _currentQuestion.value = model.current()
+                _questionIndex.value = model.currentIndex()
+            }
+            false -> {
+                _currentQuestion.value = model.current()
+                _questionIndex.value = model.currentIndex()
+            }
+            null -> {
+                _navigateToResult.value = true
+            }
+        }
+        _answerResult.value = null
+    }
+
+    fun doneNavigation() {
+        _navigateToResult.value = false
     }
 }

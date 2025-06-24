@@ -21,4 +21,9 @@
     <color name="card_question">#8E24AA</color>
     <color name="button_option">#662BF0</color>
     <color name="button_dica">#009688</color>
+
+    <color name="quiz_option_correct">#4CAF50</color>
+    <color name="quiz_option_wrong"> #F44336</color>
+    <color name="timer_finish">#FA460B</color>
+
 </resources>
