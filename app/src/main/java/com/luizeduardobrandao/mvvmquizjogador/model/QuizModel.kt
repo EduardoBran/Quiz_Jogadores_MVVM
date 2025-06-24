@@ -13,11 +13,16 @@ class QuizModel(private val repo: QuizRepository) {
 
     private lateinit var questions: List<Question>
     private var index = 0
+    private var level = 1 // guarda level atual
 
     fun load(level: Int) {
+        this.level = level
         questions = repo.loadQuestionByLevel(level)
         index = 0
     }
+
+    // recupera o level
+    fun getLevel(): Int = level
 
     fun current(): Question = questions[index]
     fun currentIndex(): Int = index + 1

@@ -7,6 +7,7 @@ import android.os.Looper
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -107,6 +108,19 @@ class QuizActivity : AppCompatActivity() {
                     viewModel.doneNavigation()
                 }, 2000)
             }
+        }
+
+        // 6) Observe o cronômetro e atualiza UI
+        viewModel.remainingSeconds.observe(this) { secs ->
+            binding.textviewTimer.text = "${secs}s"
+            val colorRes = if (secs <= 10)
+                R.color.timer_finish
+            else
+                R.color.black
+
+            binding.textviewTimer.setTextColor(
+                ContextCompat.getColor(this, colorRes)
+            )
         }
     }
 }
