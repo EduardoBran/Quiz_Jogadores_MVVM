@@ -99,6 +99,19 @@ class QuizViewModel(app: Application): AndroidViewModel(app) {
         }.start()
     }
 
+    // Pausa o cronômetro sem alterar o remainingSeconds atual
+    fun pauseTimer() {
+        timer?.cancel()
+    }
+
+    // Retoma o cronômetro de onde parou
+    fun resumeTimer() {
+        val secs = _remainingSeconds.value ?: initialTimerSeconds
+        if (secs > 0) {
+            startTimer(secs)
+        }
+    }
+
     override fun onCleared() {
         super.onCleared()
         timer?.cancel()

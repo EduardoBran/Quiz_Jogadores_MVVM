@@ -6,6 +6,7 @@ import android.os.Handler
 import android.os.Looper
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
@@ -43,6 +44,7 @@ class QuizActivity : AppCompatActivity() {
         // Configura RecyclerView e observers
         setupRecycler()
         observeViewModel()
+        setListeners()
 
         // Apenas na primeira criação da Activity (não depois de rotações):
         if (savedInstanceState == null) {
@@ -52,6 +54,29 @@ class QuizActivity : AppCompatActivity() {
 
         // carrega o banner no container da view binding
         BannerAds.loadBanner(this, binding.frameBanner)
+    }
+
+    // Configura os liteners
+    private fun setListeners() {
+        binding.btnPause.setOnClickListener {
+            // pausa o cronometro
+            viewModel.pauseTimer()
+
+            // exibe o AlertDialog
+            AlertDialog.Builder(this)
+                .setMessage("Deseja sair?")
+                .setPositiveButton("Sim") { _, _ ->
+                    // retorna para LevelsActivity
+                    finish()
+                }
+                .setNegativeButton("Não") { dialog, _ ->
+                    dialog.dismiss()
+                    // retoma o timer de onde parou
+                    viewModel.resumeTimer()
+                }
+                .setCancelable(false)
+                .show()
+        }
     }
 
     // Configura RecyclerView com LinearLayout e Adapter
