@@ -48,4 +48,11 @@
     <!-- Card Question -->
     <dimen name="padding_card_question">32dp</dimen>
     <dimen name="text_card_question">32sp</dimen>
+
+    <!-- Buttons Options -->
+    <dimen name="padding_vertical_button_option">24dp</dimen>
+    <dimen name="margin_top_button_option">36dp</dimen>
+    <dimen name="margin_start_button_option">24dp</dimen>
+    <dimen name="margin_end_button_option">24dp</dimen>
+    <dimen name="text_size_button_option">22sp</dimen>
 </resources>

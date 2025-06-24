@@ -12,11 +12,11 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/contentContainer"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        app:layout_constraintBottom_toTopOf="@id/frameBanner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toTopOf="parent">
 
         <!-- Menu (View de fundo) -->
@@ -88,7 +88,7 @@
             app:layout_constraintTop_toBottomOf="@id/menuView">
 
             <TextView
-                android:id="@+id/tvQuestion"
+                android:id="@+id/textviewQuestion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -99,9 +99,21 @@
         </FrameLayout>
 
 
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- RecyclerView deslocado para ficar entre o contentContainer e o banner -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerOptions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintTop_toBottomOf="@id/contentContainer"
+        app:layout_constraintBottom_toTopOf="@id/frameBanner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        tools:listitem="@layout/item_quiz" />
 
 
     <!-- FrameLayout fixo para AdMob -->

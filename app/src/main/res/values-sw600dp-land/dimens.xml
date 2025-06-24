@@ -24,4 +24,24 @@
     <dimen name="text_title_main">56sp</dimen>
     <dimen name="text_subtitle_main">44sp</dimen>
     <dimen name="text_button_main">44sp</dimen>
+
+    <!-- Activity Quiz -->
+
+    <!-- View Toolbar -->
+    <dimen name="height_view_toolbar_quiz">112dp</dimen>
+    <dimen name="width_icon_timer">36dp</dimen>
+    <dimen name="height_icon_timer">36dp</dimen>
+    <dimen name="text_toolbar_quiz">36sp</dimen>
+    <dimen name="padding_button_pause">20dp</dimen>
+
+    <!-- Card Question -->
+    <dimen name="padding_card_question">32dp</dimen>
+    <dimen name="text_card_question">32sp</dimen>
+
+    <!-- Buttons Options -->
+    <dimen name="padding_vertical_button_option">24dp</dimen>
+    <dimen name="margin_top_button_option">36dp</dimen>
+    <dimen name="margin_start_button_option">124dp</dimen>
+    <dimen name="margin_end_button_option">124dp</dimen>
+    <dimen name="text_size_button_option">22sp</dimen>
 </resources>

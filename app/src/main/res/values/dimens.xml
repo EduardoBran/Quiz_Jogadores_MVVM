@@ -49,4 +49,13 @@
     <dimen name="padding_card_question">16dp</dimen>
     <dimen name="text_card_question">18sp</dimen>
 
+    <!-- Buttons Options -->
+    <dimen name="padding_vertical_button_option">16dp</dimen>
+    <dimen name="margin_top_button_option">18dp</dimen>
+    <dimen name="margin_bottom_button_option">18dp</dimen>
+    <dimen name="margin_start_button_option">12dp</dimen>
+    <dimen name="margin_end_button_option">12dp</dimen>
+    <dimen name="text_size_button_option">16sp</dimen>
+
+
 </resources>
