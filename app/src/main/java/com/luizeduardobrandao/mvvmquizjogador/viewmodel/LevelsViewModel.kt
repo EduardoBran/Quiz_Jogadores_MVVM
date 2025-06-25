@@ -31,12 +31,13 @@ class LevelsViewModel(app: Application): AndroidViewModel(app) {
     }
 
     // Futuro: desbloqueia o próximo nível até o máximo de 10
-    fun unlockNextLevel() {
-        val next = (_unlockedLevel.value ?: 1) + 1
-        val unlocked = next.coerceAtMost(10)
-        _unlockedLevel.value = unlocked
+    fun unlockNextLevel(completedLevel: Int) {
+        val next = (completedLevel + 1).coerceAtMost(10)
+        val current = _unlockedLevel.value ?: 1
 
-        // persiste
-        LevelsSharedPreferences.setUnlockedLevel(getApplication(), unlocked)
+        if (next > current) {
+            _unlockedLevel.value = next
+            LevelsSharedPreferences.setUnlockedLevel(getApplication(), next)
+        }
     }
 }
