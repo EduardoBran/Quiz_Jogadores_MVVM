@@ -29,12 +29,21 @@ class ResultActivity : AppCompatActivity() {
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // 1) Toolbar com botão de voltar para LevelsActivity
+        // 1) Recebe o nível da Intent e informa ao ViewModel
+        val level = intent.getIntExtra("EXTRA_LEVEL", 1)
+
+        // Próximo level para exibir no Toast em LevelsActivity quando level desbloqueado
+        val nextLevel = (level + 1)
+
+        // 2) Toolbar com botão de voltar para LevelsActivity
         setSupportActionBar(binding.toolbarLevels)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         binding.toolbarLevels.setNavigationOnClickListener {
             val intent = Intent(this, LevelsActivity::class.java)
-                .apply { flags = Intent.FLAG_ACTIVITY_CLEAR_TOP }
+                .apply {
+                    flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+                    putExtra("EXTRA_LEVEL_UNLOCKED", nextLevel)
+                }
             startActivity(intent)
             finish()
         }
@@ -45,13 +54,11 @@ class ResultActivity : AppCompatActivity() {
             insets
         }
 
-        // 2) Recebe o nível da Intent e informa ao ViewModel
-        val level = intent.getIntExtra("EXTRA_LEVEL", 1)
 
         // ⬇️ Destrava o próximo nível e persiste
         levelsViewModel.unlockNextLevel()
 
-        setListeners(level)
+        setListeners(level, nextLevel)
         setObservers(level)
 
         // Carrega banner de anúncios
@@ -66,11 +73,14 @@ class ResultActivity : AppCompatActivity() {
         }
     }
 
-    // Botão “Continuar” (voltar para LevelsActivity)
-    private fun setListeners(level: Int){
+    // Botão “Continuar” (voltar para LevelsActivity) e "Compartilhar"
+    private fun setListeners(level: Int, nextLevel: Int){
         binding.btnBackToLevels.setOnClickListener {
             val intent = Intent(this, LevelsActivity::class.java)
-                .apply { flags = Intent.FLAG_ACTIVITY_CLEAR_TOP }
+                .apply {
+                    flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+                    putExtra("EXTRA_LEVEL_UNLOCKED", nextLevel)
+                }
             startActivity(intent)
             finish()
         }

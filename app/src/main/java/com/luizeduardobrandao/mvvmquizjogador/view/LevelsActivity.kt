@@ -2,6 +2,7 @@ package com.luizeduardobrandao.mvvmquizjogador.view
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -37,6 +38,9 @@ class LevelsActivity : AppCompatActivity() {
             insets
         }
 
+        // ◀️ mostra o toast se tiver EXTRA
+        handleUnlockIntent(intent)
+
         // Configura RecyclerView e observers
         setupRecycler()
         observeViewModel()
@@ -45,8 +49,27 @@ class LevelsActivity : AppCompatActivity() {
         BannerAds.loadBanner(this, binding.frameBanner)
     }
 
+    // ◀️ Capture novas intents quando vier com FLAG_ACTIVITY_CLEAR_TOP
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+        setIntent(intent)
+        handleUnlockIntent(intent)
+    }
+
+    // ◀️ Se existir o extra, exibe o toast e limpa para não repetir
+    private fun handleUnlockIntent(intent: Intent) {
+        if (intent.hasExtra("EXTRA_LEVEL_UNLOCKED")) {
+            val lvl = intent.getIntExtra("EXTRA_LEVEL_UNLOCKED", -1)
+            if (lvl > 1) {
+                Toast.makeText(this, "Level $lvl desbloqueado!", Toast.LENGTH_SHORT)
+                    .show()
+            }
+            intent.extras?.remove("EXTRA_LEVEL_UNLOCKED")
+        }
+    }
+
+    // 1) Define o GridLayoutManager
     private fun setupRecycler() {
-        // 1) Define o GridLayoutManager
         binding.recyclerLevels.layoutManager = GridLayoutManager(this, 5)
     }
 
