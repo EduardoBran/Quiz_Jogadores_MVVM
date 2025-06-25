@@ -25,6 +25,7 @@
     <dimen name="text_subtitle_main">44sp</dimen>
     <dimen name="text_button_main">44sp</dimen>
 
+
     <!-- Activity Quiz -->
 
     <!-- View Toolbar -->
@@ -44,4 +45,11 @@
     <dimen name="margin_start_button_option">124dp</dimen>
     <dimen name="margin_end_button_option">124dp</dimen>
     <dimen name="text_size_button_option">22sp</dimen>
+
+
+    <!-- Activity Result -->
+
+    <dimen name="margin_start_card_result">240dp</dimen>
+    <dimen name="margin_end_card_result">240dp</dimen>
+
 </resources>

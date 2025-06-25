@@ -55,4 +55,18 @@
     <dimen name="margin_start_button_option">24dp</dimen>
     <dimen name="margin_end_button_option">24dp</dimen>
     <dimen name="text_size_button_option">22sp</dimen>
+
+
+    <!-- Activity Result -->
+    <dimen name="margin_start_card_result">124dp</dimen>
+    <dimen name="margin_end_card_result">124dp</dimen>
+
+    <dimen name="text_size_congrats_result">52sp</dimen>
+    <dimen name="text_size_finished_result">40sp</dimen>
+
+    <dimen name="margin_top_button_result">20dp</dimen>
+    <dimen name="margin_top_button_share">16dp</dimen>
+    <dimen name="padding_vertical_button_level_result">22dp</dimen>
+    <dimen name="padding_vertical_button_share_result">20dp</dimen>
+    <dimen name="text_size_buttons_result">32sp</dimen>
 </resources>

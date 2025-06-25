@@ -30,8 +30,8 @@
         android:id="@+id/materialCard"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginStart="@dimen/margin_start_card_result"
+        android:layout_marginEnd="@dimen/margin_end_card_result"
         app:cardCornerRadius="12dp"
         app:cardElevation="12dp"
         app:layout_constraintBottom_toTopOf="@id/frameBanner"
@@ -53,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/text_congratulations"
                 android:textColor="@color/button_dica"
-                android:textSize="32sp"
+                android:textSize="@dimen/text_size_congrats_result"
                 android:textStyle="bold" />
 
             <TextView
@@ -63,7 +63,7 @@
                 android:layout_marginTop="8dp"
                 android:text="@string/text_result"
                 android:textColor="@color/black"
-                android:textSize="24sp" />
+                android:textSize="@dimen/text_size_finished_result" />
 
             <!-- Botão voltar -->
             <com.google.android.material.button.MaterialButton
@@ -71,10 +71,12 @@
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="@dimen/margin_top_button_result"
                 android:backgroundTint="@color/button_option"
+                android:paddingVertical="@dimen/padding_vertical_button_level_result"
                 android:text="@string/btn_levels"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_buttons_result" />
 
             <!-- Botão compartilhar -->
             <com.google.android.material.button.MaterialButton
@@ -82,9 +84,11 @@
                 style="@style/Widget.MaterialComponents.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/margin_top_button_share"
                 android:backgroundTint="@color/button_dica"
-                android:text="@string/btn_share" />
+                android:paddingVertical="@dimen/padding_vertical_button_level_result"
+                android:text="@string/btn_share"
+                android:textSize="@dimen/text_size_buttons_result" />
 
         </LinearLayout>
 

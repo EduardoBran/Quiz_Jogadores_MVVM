@@ -31,4 +31,10 @@
     <dimen name="margin_start_button_option">104dp</dimen>
     <dimen name="margin_end_button_option">104dp</dimen>
 
+
+    <!-- Activity Result -->
+
+    <dimen name="margin_start_card_result">140dp</dimen>
+    <dimen name="margin_end_card_result">140dp</dimen>
+
 </resources>

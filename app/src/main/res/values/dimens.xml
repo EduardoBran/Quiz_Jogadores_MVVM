@@ -58,4 +58,17 @@
     <dimen name="text_size_button_option">16sp</dimen>
 
 
+    <!-- Activity Result -->
+    <dimen name="margin_start_card_result">40dp</dimen>
+    <dimen name="margin_end_card_result">40dp</dimen>
+
+    <dimen name="text_size_congrats_result">32sp</dimen>
+    <dimen name="text_size_finished_result">24sp</dimen>
+
+    <dimen name="margin_top_button_result">8dp</dimen>
+    <dimen name="margin_top_button_share">4dp</dimen>
+    <dimen name="padding_vertical_button_level_result">12dp</dimen>
+    <dimen name="padding_vertical_button_share_result">10dp</dimen>
+    <dimen name="text_size_buttons_result">18sp</dimen>
+
 </resources>
