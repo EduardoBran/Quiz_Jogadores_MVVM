@@ -24,15 +24,12 @@
     <string name="cont_btn_option3">Opção 3</string>
     <string name="cont_btn_option4">Opção 4</string>
 
-
-
-
+    
     <!-- Activity Result -->
     <string name="toolbar_title_result">Resultado</string>
-    <string name="text_congratulations_result">Parabéns</string>
+    <string name="text_congratulations">Parabéns!</string>
+    <string name="text_result">Zerou o level </string>
     <string name="btn_levels">Levels</string>
     <string name="btn_share">Compartilhar</string>
-
-
 
 </resources>
