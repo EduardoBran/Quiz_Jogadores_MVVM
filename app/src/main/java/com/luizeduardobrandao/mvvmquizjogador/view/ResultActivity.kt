@@ -43,7 +43,7 @@ class ResultActivity : AppCompatActivity() {
         // 2) Recebe o nível da Intent e informa ao ViewModel
         val level = intent.getIntExtra("EXTRA_LEVEL", 1)
 
-        setListeners()
+        setListeners(level)
         setObservers(level)
 
         // Carrega banner de anúncios
@@ -59,12 +59,31 @@ class ResultActivity : AppCompatActivity() {
     }
 
     // Botão “Continuar” (voltar para LevelsActivity)
-    private fun setListeners(){
+    private fun setListeners(level: Int){
         binding.btnBackToLevels.setOnClickListener {
             val intent = Intent(this, LevelsActivity::class.java)
                 .apply { flags = Intent.FLAG_ACTIVITY_CLEAR_TOP }
             startActivity(intent)
             finish()
+        }
+
+        // Compartilhar
+        binding.btnShare.setOnClickListener {
+            // monta a mensagem
+            val shareText = """
+                Zerei o Level $level do Quiz Jogadores de Futebol
+        Vem jogar também!
+        https://play.google.com/store/apps/details?id=com.luizeduardobrandao.quizjogadoresdefutebol
+        """.trimIndent()
+
+            // Cria a Intent de compartilhamento
+            val shareIntent = Intent(Intent.ACTION_SEND).apply {
+                type = "text/plain"
+                putExtra(Intent.EXTRA_TEXT, shareText)
+            }
+
+            // Exibe o chooser
+            startActivity(Intent.createChooser(shareIntent, "Compartilhar via"))
         }
     }
 }
