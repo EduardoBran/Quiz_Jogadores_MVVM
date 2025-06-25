@@ -1,0 +1,18 @@
+
+No diretório values
+
+- clicar em New < Value Resources File
+- em File name colocar: strings 
+
+- Em Available Qualifiers adicionar:
+   - Locale
+       - Adicionar a Language e Specify Region Only (opcional)
+       - Clicar em ok
+       
+Será criado um novo diretório chamado strings e dentro dele:
+	- tem a strings.xml original
+	- nova string da língua adicionada
+	
+	
+Agora atualizar todas as strings para a língua selecionada.   
+    

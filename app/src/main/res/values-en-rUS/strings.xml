@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MVVM Player Quiz</string>
+
+    <!-- Activity Main -->
+    <string name="toolbar_title_main">Players Quiz</string>
+    <string name="text_welcome_main">Welcome!</string>
+    <string name="text_explanation_main">Test your knowledge of football players!</string>
+    <string name="btn_start">Start Quiz</string>
+
+    <!-- Activity Levels -->
+    <string name="toolbar_title_levels">Levels</string>
+    <string name="icon_menu_back_levels">Back</string>
+    <string name="btn_levels_1">1</string>
+
+    <!-- Activity Quiz -->
+    <string name="label_timer">%1$d/10</string>
+    <string name="label_timer_seconds">%1$ds</string>
+    <string name="label_quiz_card">Played for: %1$s</string>
+    <string name="text_dica">Watch a video to get a hint!</string>
+
+    <string name="cont_btn_pause">Pause</string>
+    <string name="cont_btn_option1">Option 1</string>
+    <string name="cont_btn_option2">Option 2</string>
+    <string name="cont_btn_option3">Option 3</string>
+    <string name="cont_btn_option4">Option 4</string>
+
+    <!-- mensagem do AlertDialog -->
+    <string name="dialog_exit_message">Do you want to exit?</string>
+    <!-- texto dos botões -->
+    <string name="dialog_positive">Yes</string>
+    <string name="dialog_negative">No</string>
+
+    <!-- Activity Result -->
+    <string name="toolbar_title_result">Result</string>
+    <string name="text_congratulations">Congratulations!</string>
+    <string name="label_text_result">You cleared level %1$d</string>
+    <string name="btn_levels">Levels</string>
+    <string name="btn_share">Share</string>
+
+    <!-- mensagem completa de compartilhamento, com placeholder para o level -->
+    <string name="share_message">
+        I cleared level %1$d of the Football Players Quiz\n
+        Come play too!\n
+        https://play.google.com/store/apps/details?id=com.luizeduardobrandao.quizjogadoresdefutebol
+    </string>
+
+    <!-- título do chooser -->
+    <string name="share_chooser_title">Share via</string>
+</resources>

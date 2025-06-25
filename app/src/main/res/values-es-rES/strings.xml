@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MVVM Cuestionario de Jugadores</string>
+
+    <!-- Activity Main -->
+    <string name="toolbar_title_main">Cuestionario de Jugadores</string>
+    <string name="text_welcome_main">¡Bienvenido!</string>
+    <string name="text_explanation_main">¡Pon a prueba tus conocimientos sobre futbolistas!</string>
+    <string name="btn_start">Iniciar cuestionario</string>
+
+    <!-- Activity Levels -->
+    <string name="toolbar_title_levels">Niveles</string>
+    <string name="icon_menu_back_levels">Atrás</string>
+    <string name="btn_levels_1">1</string>
+
+    <!-- Activity Quiz -->
+    <string name="label_timer">%1$d/10</string>
+    <string name="label_timer_seconds">%1$ds</string>
+    <string name="label_quiz_card">Jugado durante: %1$s</string>
+    <string name="text_dica">¡Mira un video para obtener una pista!</string>
+
+    <string name="cont_btn_pause">Pausar</string>
+    <string name="cont_btn_option1">Opción 1</string>
+    <string name="cont_btn_option2">Opción 2</string>
+    <string name="cont_btn_option3">Opción 3</string>
+    <string name="cont_btn_option4">Opción 4</string>
+
+    <!-- mensaje del AlertDialog -->
+    <string name="dialog_exit_message">¿Deseas salir?</string>
+    <!-- texto de los botones -->
+    <string name="dialog_positive">Sí</string>
+    <string name="dialog_negative">No</string>
+
+    <!-- Activity Result -->
+    <string name="toolbar_title_result">Resultado</string>
+    <string name="text_congratulations">¡Felicidades!</string>
+    <string name="label_text_result">Has completado el nivel %1$d</string>
+    <string name="btn_levels">Niveles</string>
+    <string name="btn_share">Compartir</string>
+
+    <!-- mensaje completo de compartición, con placeholder para el nivel -->
+    <string name="share_message">
+        Completé el nivel %1$d del Cuestionario de Jugadores de Fútbol\n
+        ¡Juega tú también!\n
+        https://play.google.com/store/apps/details?id=com.luizeduardobrandao.quizjogadoresdefutebol
+    </string>
+
+    <!-- título del chooser -->
+    <string name="share_chooser_title">Compartir vía</string>
+</resources>
