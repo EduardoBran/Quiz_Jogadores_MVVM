@@ -10,11 +10,16 @@ import androidx.core.view.WindowInsetsCompat
 import com.luizeduardobrandao.mvvmquizjogador.R
 import com.luizeduardobrandao.mvvmquizjogador.databinding.ActivityResultBinding
 import com.luizeduardobrandao.mvvmquizjogador.repository.BannerAds
+import com.luizeduardobrandao.mvvmquizjogador.viewmodel.LevelsViewModel
 import com.luizeduardobrandao.mvvmquizjogador.viewmodel.ResultViewModel
 
 class ResultActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityResultBinding
+    // ViewModel que controla o unlocked
+    private val levelsViewModel: LevelsViewModel by viewModels()
+
+    // ViewModel de Result
     private val viewModel: ResultViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,6 +47,9 @@ class ResultActivity : AppCompatActivity() {
 
         // 2) Recebe o nível da Intent e informa ao ViewModel
         val level = intent.getIntExtra("EXTRA_LEVEL", 1)
+
+        // ⬇️ Destrava o próximo nível e persiste
+        levelsViewModel.unlockNextLevel()
 
         setListeners(level)
         setObservers(level)

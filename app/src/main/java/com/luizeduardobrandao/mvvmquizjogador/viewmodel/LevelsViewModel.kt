@@ -1,13 +1,17 @@
 package com.luizeduardobrandao.mvvmquizjogador.viewmodel
 
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
+import com.luizeduardobrandao.mvvmquizjogador.helper.LevelsSharedPreferences
 
-class LevelsViewModel: ViewModel() {
+class LevelsViewModel(app: Application): AndroidViewModel(app) {
 
     // Nível atualmente desbloqueado (inicia em 1)
-    private val _unlockedLevel = MutableLiveData(1)
+    private val _unlockedLevel = MutableLiveData<Int>().apply {
+        value = LevelsSharedPreferences.getUnlockedLevel(getApplication())
+    }
     val unlockedLevel: LiveData<Int> = _unlockedLevel
 
     // Evento de navegação: quando não nulo, indica qual nível abrir
@@ -29,6 +33,10 @@ class LevelsViewModel: ViewModel() {
     // Futuro: desbloqueia o próximo nível até o máximo de 10
     fun unlockNextLevel() {
         val next = (_unlockedLevel.value ?: 1) + 1
-        _unlockedLevel.value = next.coerceAtMost(10)
+        val unlocked = next.coerceAtMost(10)
+        _unlockedLevel.value = unlocked
+
+        // persiste
+        LevelsSharedPreferences.setUnlockedLevel(getApplication(), unlocked)
     }
 }
