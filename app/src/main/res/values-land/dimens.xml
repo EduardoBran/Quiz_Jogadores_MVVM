@@ -24,6 +24,8 @@
 
     <!-- Activity Quiz -->
 
+    <dimen name="height_card_question">80dp</dimen>
+
     <!-- Buttons Options -->
     <dimen name="padding_vertical_button_option">10dp</dimen>
     <dimen name="margin_top_button_option">2dp</dimen>

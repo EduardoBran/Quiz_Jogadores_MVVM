@@ -79,7 +79,7 @@
         <FrameLayout
             android:id="@+id/questionCard"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/height_card_question"
             android:layout_marginTop="16dp"
             android:background="@drawable/bg_pause_button"
             android:padding="@dimen/padding_card_question"
@@ -92,7 +92,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Joguei por: Inter de Milão, Liverpool, Barcelona, Bayern de Munique, Aston Villa, Al-Duhail, Vasco"
+                android:layout_gravity="center"
+                android:text="Joguei por: Inter de Milão, Liverpool, Barcelona, Bayern de Munique, Aston Villa, Al-Duhail, Vasco, Vasco, Vasco, Vasco"
                 android:textColor="@color/white"
                 android:textSize="@dimen/text_card_question"
                 android:textStyle="bold" />

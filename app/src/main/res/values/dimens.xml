@@ -46,6 +46,7 @@
     <dimen name="padding_button_pause">8dp</dimen>
 
     <!-- Card Question -->
+    <dimen name="height_card_question">110dp</dimen>
     <dimen name="padding_card_question">16dp</dimen>
     <dimen name="text_card_question">18sp</dimen>
 

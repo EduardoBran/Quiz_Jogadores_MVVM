@@ -38,6 +38,8 @@
 
     <!-- Activity Quiz -->
 
+    <dimen name="height_card_question">200dp</dimen>
+
     <!-- View Toolbar -->
     <dimen name="height_view_toolbar_quiz">112dp</dimen>
     <dimen name="width_icon_timer">36dp</dimen>
