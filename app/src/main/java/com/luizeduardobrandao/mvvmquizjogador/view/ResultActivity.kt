@@ -55,8 +55,10 @@ class ResultActivity : AppCompatActivity() {
         }
 
 
-        // ⬇️ Destrava o próximo nível e persiste
-        levelsViewModel.unlockNextLevel()
+        // ⬇️ Destrava o próximo nível e persiste (só destrava na primeira criação, não em rotações)
+        if (savedInstanceState == null) {
+            levelsViewModel.unlockNextLevel()
+        }
 
         setListeners(level, nextLevel)
         setObservers(level)
