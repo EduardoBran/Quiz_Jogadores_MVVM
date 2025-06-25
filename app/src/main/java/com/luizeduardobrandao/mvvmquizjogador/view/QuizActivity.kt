@@ -40,17 +40,18 @@ class QuizActivity : AppCompatActivity() {
             insets
         }
 
+        // Recupera level atual
+        val level = intent.getIntExtra("EXTRA_LEVEL", 1)
+
+        // Carrega as perguntas do level atual e não muda índice após rotações
+        if (savedInstanceState == null) {
+            viewModel.loadQuestions(level)
+        }
 
         // Configura RecyclerView e observers
         setupRecycler()
-        observeViewModel()
+        observeViewModel(level)
         setListeners()
-
-        // Apenas na primeira criação da Activity (não depois de rotações):
-        if (savedInstanceState == null) {
-            val level = intent.getIntExtra("EXTRA_LEVEL", 1)
-            viewModel.loadQuestions(level)
-        }
 
         // carrega o banner no container da view binding
         BannerAds.loadBanner(this, binding.frameBanner)
@@ -92,7 +93,7 @@ class QuizActivity : AppCompatActivity() {
     }
 
     // Observa e exibe a pergunta e índice
-    private fun observeViewModel(){
+    private fun observeViewModel(level: Int){
         // 2) Observe de pergunta
         viewModel.currentQuestion.observe(this) { q ->
             val clubes = q.clubs.joinToString(", ")
@@ -128,7 +129,8 @@ class QuizActivity : AppCompatActivity() {
 
                 // espera 2s e então navega
                 Handler(Looper.getMainLooper()).postDelayed({
-                    startActivity(Intent(this, ResultActivity::class.java))
+                    startActivity(Intent(this, ResultActivity::class.java)
+                        .putExtra("EXTRA_LEVEL", level))
                     finish()
                     viewModel.doneNavigation()
                 }, 2000)
