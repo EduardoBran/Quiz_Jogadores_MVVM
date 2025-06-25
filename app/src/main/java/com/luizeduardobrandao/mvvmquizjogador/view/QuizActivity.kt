@@ -65,12 +65,12 @@ class QuizActivity : AppCompatActivity() {
 
             // exibe o AlertDialog
             AlertDialog.Builder(this)
-                .setMessage("Deseja sair?")
-                .setPositiveButton("Sim") { _, _ ->
+                .setMessage(R.string.dialog_exit_message)
+                .setPositiveButton(R.string.dialog_positive) { _, _ ->
                     // retorna para LevelsActivity
                     finish()
                 }
-                .setNegativeButton("Não") { dialog, _ ->
+                .setNegativeButton(R.string.dialog_negative) { dialog, _ ->
                     dialog.dismiss()
                     // retoma o timer de onde parou
                     viewModel.resumeTimer()
@@ -141,7 +141,8 @@ class QuizActivity : AppCompatActivity() {
 
         // 6) Observe o cronômetro e atualiza UI
         viewModel.remainingSeconds.observe(this) { secs ->
-            binding.textviewTimer.text = "${secs}s"
+            binding.textviewTimer.text =
+                getString(R.string.label_timer_seconds, secs)
             val colorRes = if (secs <= 10)
                 R.color.timer_finish
             else

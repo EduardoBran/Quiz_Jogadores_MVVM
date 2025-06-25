@@ -16,6 +16,7 @@
 
     <!-- Activity Quiz -->
     <string name="label_timer">%1$d/10</string>
+    <string name="label_timer_seconds">%1$ds</string>
     <string name="label_quiz_card">Joguei por: %1$s</string>
     <string name="text_dica">Veja um vídeo para ganhar uma dica!</string>
 
@@ -24,6 +25,12 @@
     <string name="cont_btn_option2">Opção 2</string>
     <string name="cont_btn_option3">Opção 3</string>
     <string name="cont_btn_option4">Opção 4</string>
+
+    <!-- mensagem do AlertDialog -->
+    <string name="dialog_exit_message">Deseja sair?</string>
+    <!-- texto dos botões -->
+    <string name="dialog_positive">Sim</string>
+    <string name="dialog_negative">Não</string>
 
     
     <!-- Activity Result -->
