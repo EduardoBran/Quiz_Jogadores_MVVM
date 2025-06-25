@@ -71,7 +71,8 @@ class ResultActivity : AppCompatActivity() {
     private fun setObservers(level: Int){
         viewModel.setLevel(level)
         viewModel.level.observe(this) { lvl ->
-            binding.textviewFinishedLevel.text = "Zerou o level $lvl"
+            binding.textviewFinishedLevel.text =
+                getString(R.string.label_text_result, lvl)
         }
     }
 

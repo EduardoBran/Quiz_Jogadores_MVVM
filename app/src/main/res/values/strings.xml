@@ -15,7 +15,8 @@
 
 
     <!-- Activity Quiz -->
-    <string name="text_quiz_card">Joguei por </string>
+    <string name="label_timer">%1$d/10</string>
+    <string name="label_quiz_card">Joguei por: %1$s</string>
     <string name="text_dica">Veja um vídeo para ganhar uma dica!</string>
 
     <string name="cont_btn_pause">Pausar</string>
@@ -28,7 +29,7 @@
     <!-- Activity Result -->
     <string name="toolbar_title_result">Resultado</string>
     <string name="text_congratulations">Parabéns!</string>
-    <string name="text_result">Zerou o level </string>
+    <string name="label_text_result">Zerou o level %1$d</string>
     <string name="btn_levels">Levels</string>
     <string name="btn_share">Compartilhar</string>
 

@@ -97,13 +97,15 @@ class QuizActivity : AppCompatActivity() {
         // 2) Observe de pergunta
         viewModel.currentQuestion.observe(this) { q ->
             val clubes = q.clubs.joinToString(", ")
-            binding.textviewQuestion.text = "Joguei por: $clubes"
+            binding.textviewQuestion.text =
+                getString(R.string.label_quiz_card, clubes)
             adapter.setOptions(q.options)
         }
 
         // 3) Observa índice
         viewModel.questionIndex.observe(this) { index ->
-            binding.textviewIndex.text = "$index/10"
+            binding.textviewIndex.text =
+                getString(R.string.label_timer, index)
         }
 
         // 4) Observer do resultado da resposta (somente TRUE ou FALSE)
