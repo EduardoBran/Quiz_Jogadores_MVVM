@@ -91,11 +91,7 @@ class ResultActivity : AppCompatActivity() {
         // Compartilhar
         binding.btnShare.setOnClickListener {
             // monta a mensagem
-            val shareText = """
-                Zerei o Level $level do Quiz Jogadores de Futebol
-        Vem jogar também!
-        https://play.google.com/store/apps/details?id=com.luizeduardobrandao.quizjogadoresdefutebol
-        """.trimIndent()
+            val shareText = getString(R.string.share_message, level)
 
             // Cria a Intent de compartilhamento
             val shareIntent = Intent(Intent.ACTION_SEND).apply {
@@ -104,7 +100,7 @@ class ResultActivity : AppCompatActivity() {
             }
 
             // Exibe o chooser
-            startActivity(Intent.createChooser(shareIntent, "Compartilhar via"))
+            startActivity(Intent.createChooser(shareIntent, getString(R.string.share_chooser_title)))
         }
     }
 }

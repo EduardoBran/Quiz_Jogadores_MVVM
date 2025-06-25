@@ -40,4 +40,14 @@
     <string name="btn_levels">Levels</string>
     <string name="btn_share">Compartilhar</string>
 
+    <!-- mensagem completa de compartilhamento, com placeholder para o level -->
+    <string name="share_message">
+        Zerei o Level %1$d do Quiz Jogadores de Futebol\n
+        Vem jogar também!\n
+        https://play.google.com/store/apps/details?id=com.luizeduardobrandao.quizjogadoresdefutebol
+    </string>
+
+    <!-- título do chooser -->
+    <string name="share_chooser_title">Compartilhar via</string>
+
 </resources>
