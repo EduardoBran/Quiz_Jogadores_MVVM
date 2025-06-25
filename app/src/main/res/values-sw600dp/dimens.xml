@@ -54,7 +54,7 @@
     <dimen name="margin_top_button_option">36dp</dimen>
     <dimen name="margin_start_button_option">24dp</dimen>
     <dimen name="margin_end_button_option">24dp</dimen>
-    <dimen name="text_size_button_option">22sp</dimen>
+    <dimen name="text_size_button_option">28sp</dimen>
 
 
     <!-- Activity Result -->

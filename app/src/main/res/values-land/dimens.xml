@@ -33,8 +33,16 @@
 
 
     <!-- Activity Result -->
-
     <dimen name="margin_start_card_result">140dp</dimen>
     <dimen name="margin_end_card_result">140dp</dimen>
+
+    <dimen name="text_size_congrats_result">30sp</dimen>
+    <dimen name="text_size_finished_result">22sp</dimen>
+
+    <dimen name="margin_top_button_result">6dp</dimen>
+    <dimen name="margin_top_button_share">2dp</dimen>
+    <dimen name="padding_vertical_button_level_result">10dp</dimen>
+    <dimen name="padding_vertical_button_share_result">8dp</dimen>
+    <dimen name="text_size_buttons_result">16sp</dimen>
 
 </resources>
